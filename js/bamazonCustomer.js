@@ -4,11 +4,6 @@ var inquirer = require("inquirer");
 
 require("dotenv").config();
 
-var userRequest = process.argv[2];
-
-var userItem = process.argv.slice(3).join(" ");
-
-
 var connection = mysql.createConnection({
   host: "localhost",
 
@@ -49,7 +44,7 @@ function start()
           validate: function (value) 
           {
 
-            if (value >= results.length)
+            if (value >= results.length + 1)
             {
               return "please enter a valid number";
 
@@ -84,7 +79,7 @@ function start()
               validate: function (value) 
               {
 
-                if (value > results[itemId].stock)
+                if (value > results[itemId - 1].stock)
                 {
                   return "We do not have enough of that in stock right now";
 
@@ -114,9 +109,9 @@ function start()
     function checkForId(x)
     {
 
-      for (var i = 0; i < results.length; i++)
+      for (var i = 0; i < results.length + 1; i++)
       {
-        if (results[i].id == x - 1)
+        if (results[i].id == (x))
         {
           return true;
         }
