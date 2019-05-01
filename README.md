@@ -17,8 +17,8 @@ and follow the prompts
 
 shown below example of what happens after starting the program
 
-![example](bamazon\images\examplePart1.png)
+![example](images\examplePart1.png)
 
 shown below a completed transaction
 
-![example](bamazon\images\examplePart2.png)
+![example](images\examplePart2.png)
