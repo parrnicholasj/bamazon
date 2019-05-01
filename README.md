@@ -17,8 +17,8 @@ and follow the prompts
 
 shown below example of what happens after starting the program
 
-![example](images\examplePart1.png)
+![example](images/examplePart1.png)
 
 shown below a completed transaction
 
-![example](images\examplePart2.png)
+![example](images/examplePart2.png)
